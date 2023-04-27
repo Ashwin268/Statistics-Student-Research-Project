@@ -1,0 +1,13 @@
+data=read.csv("E:\\FoodPattern2.csv",sep=",",header=T)
+data
+is.na(data)
+sum(is.na(data))
+chisq.test(data$Gender,data$Food_prefer)
+table(data$Gender,data$eating_more)
+t.test(data$Gender,data$gain_weight)
+chisq.test(data$Gender,data$taught_us)
+table(data$Gender,data$taught_us)
+chisq.test(data$Gender,data$changedhabbits)
+prop.test(72,120,p=0.6)
+prop.test(61,120,p=0.6,alternative = "greater")
+table(data$gain_weight)
